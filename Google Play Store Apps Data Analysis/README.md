@@ -164,9 +164,16 @@ free_paid_avg_rating = df.groupby('Type')['Rating'].mean()
 #### **Query 16: Display Top 5 Apps with Maximum Installs**
 
 ```python
-# Convert Installs to Numeric
+# Remove non-numeric values in 'Installs' column (e.g., 'Free')
+df = df[df['Installs'] != 'Free']
+
+# Convert 'Installs' to numeric by removing commas and '+' signs
 df['Installs'] = df['Installs'].str.replace('[+,]', '', regex=True).astype(float)
+
+# Now, get the top 5 apps with maximum installs
 top_5_installs = df.nlargest(5, 'Installs')[['App', 'Installs']]
+top_5_installs
+
 ```
 
 ---
