@@ -7,7 +7,7 @@ The purpose of this analysis is to explore, clean, and analyze the Google Play S
 The dataset consists of 13 columns and 10,841 rows with information on app names, categories, ratings, reviews, installation count, price, content rating, and more.
 
 #### **3. Dataset Information**
-- **Path to Dataset**: `[/content/drive/MyDrive/Data Analysis/Python Project/Google Play Store Apps Analysis/googleplaystore.csv](https://www.kaggle.com/datasets/lava18/google-play-store-apps?select=googleplaystore.csv)`
+- ** Dataset**: [Kaggle](https://www.kaggle.com/datasets/lava18/google-play-store-apps?select=googleplaystore.csv)
 - **Columns in the Dataset**:
   - `App`: Name of the app
   - `Category`: App category
